@@ -11,6 +11,7 @@ group :test do
 end
 
 group :development, :test do
+  # Совместимые с Ruby 2.6 версии линтеров
   gem 'rubocop', '1.50.2', require: false
   gem 'rubocop-minitest', '0.28.0', require: false
 end

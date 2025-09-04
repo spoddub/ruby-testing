@@ -1,15 +1,11 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start
-
-require 'minitest/autorun'
-require 'minitest/power_assert'
+require_relative 'test_helper'
 require_relative '../sum_even'
 
 class SumEvenTest < Minitest::Test
   def test_sums_only_even_integers
-    assert_equal 12, sum_even([1, 2, 3, 4, 5, 6]) # 2 + 4 + 6
+    assert_equal 12, sum_even([1, 2, 3, 4, 5, 6])
   end
 
   def test_returns_zero_when_no_evens
@@ -17,11 +13,10 @@ class SumEvenTest < Minitest::Test
   end
 
   def test_ignores_non_integers
-    assert_equal 12, sum_even([1, 2, 'three', 4, nil, 6]) # 2 + 4 + 6
+    assert_equal 12, sum_even([1, 2, 'three', 4, nil, 6])
   end
 
   def test_handles_negative_and_zero
-    # -4 + 0 + 2 + 4 = 2
     assert_equal 2, sum_even([-5, -4, 0, 1, 2, 3, 4, 5])
   end
 

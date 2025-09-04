@@ -5,11 +5,21 @@ AllCops:
   TargetRubyVersion: 2.6
   NewCops: enable
   Exclude:
-    - 'vendor/**/*'
-    - 'db/**/*'
+    - "vendor/**/*"
+    - "coverage/**/*"
+    - "db/**/*"
 
 Layout/LineLength:
   Max: 100
 
 Metrics/MethodLength:
   Max: 15
+
+Minitest/LifecycleHooksOrder:
+  Enabled: true
+Minitest/AssertPredicate:
+  Enabled: true
+Minitest/RefutePredicate:
+  Enabled: true
+Minitest/TestFileName:
+  Enabled: true
