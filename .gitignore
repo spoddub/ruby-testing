@@ -1,1 +1,8 @@
+
+.bundle/
+vendor/
+
+
 coverage/
+
+.DS_Store

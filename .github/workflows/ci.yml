@@ -27,3 +27,11 @@ jobs:
 
       - name: Test (Minitest)
         run: bundle exec ruby -e 'Dir["test/**/*_test.rb"].sort.each { |f| require File.expand_path(f) }'
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          file: coverage/lcov.info
+          format: lcov
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
