@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sum_even(numbers)
   raise ArgumentError, 'Input must be an array' unless numbers.is_a?(Array)
 
