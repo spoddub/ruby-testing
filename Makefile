@@ -1,4 +1,4 @@
-test:
+lint:
 	bundle exec rubocop
-fix lint:
+lint fix:
 	bundle exec rubocop -A
