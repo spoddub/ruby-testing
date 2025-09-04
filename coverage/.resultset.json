@@ -1,0 +1,18 @@
+{
+  "Minitest": {
+    "coverage": {
+      "/Users/spoddub/ruby-testing/sum_even.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          9,
+          null,
+          33,
+          null
+        ]
+      }
+    },
+    "timestamp": 1757022586
+  }
+}

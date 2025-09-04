@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
+    docile (1.4.1)
     json (2.7.6)
     minitest (5.25.4)
     minitest-power_assert (0.3.1)
@@ -31,6 +32,12 @@ GEM
     rubocop-minitest (0.28.0)
       rubocop (>= 1.39, < 2.0)
     ruby-progressbar (1.13.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.13.2)
+    simplecov_json_formatter (0.1.4)
     unicode-display_width (2.6.0)
 
 PLATFORMS
@@ -41,6 +48,7 @@ DEPENDENCIES
   minitest-power_assert (~> 0.3.1)
   rubocop (= 1.50.2)
   rubocop-minitest (= 0.28.0)
+  simplecov (~> 0.21)
 
 BUNDLED WITH
    1.17.2

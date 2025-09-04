@@ -8,3 +8,5 @@ lint-fix:
 
 test:
 	bundle exec ruby -e 'Dir["test/**/*_test.rb"].sort.each { |f| require File.expand_path(f) }'
+install:
+	bundle install

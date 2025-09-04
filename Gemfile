@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-
+group :test do
+  gem 'simplecov', '~> 0.21', require: false
+end
 gem 'minitest', '~> 5.25'
 gem 'minitest-power_assert', '~> 0.3.1'
 
