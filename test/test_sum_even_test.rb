@@ -1,3 +1,6 @@
+# test/test_sum_even_test.rb
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require 'minitest/power_assert'
 require_relative '../sum_even'
@@ -29,3 +32,11 @@ class SumEvenTest < Minitest::Test
     assert_raises(ArgumentError) { sum_even(123) }
     assert_raises(ArgumentError) { sum_even('not an array') }
   end
+
+  # Пример power_assert: при падении покажет разложение выражения
+  def test_power_assert_example
+    actual   = sum_even([1, 2, 3, 4])
+    expected = 6
+    assert { actual == expected }
+  end
+end
